@@ -1,0 +1,12 @@
+<launch>
+
+   <node pkg="tfgrobot_2nav" type="datos_ordenador_scan.py" name="sensor_node" output="screen">
+ </node>
+ <node pkg="tfgrobot_2nav" type="datos_ordenador_odom.py" name="odom_node" output="screen">
+ </node>
+ <node pkg="tfgrobot_2nav" type="datos_ordenador_tf2.py" name="transform_configuration_node" output="screen">
+ </node>
+ <node pkg="tfgrobot_2nav" type="datos_ordenador_inicial.py" name="pose_configuration_node" output="screen">
+ </node>
+ 
+</launch>
